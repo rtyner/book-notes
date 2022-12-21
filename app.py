@@ -13,6 +13,6 @@ def get_db_connection():
 @app.route('/')
 def index():
     conn = get_db_connection()
-    temp = conn.execute('SELECT * FROM books').fetchall()
+    book = conn.execute('SELECT * FROM books').fetchall()
     conn.close()
-    return render_template('templates/index.html', books=book)
+    return render_template('index.html', books=book)
