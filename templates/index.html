@@ -2,9 +2,8 @@
 
 {% block content %}
 <br>
-    {% for temps in temps %}
-    {{ temps['Date'] }} | {{ temps['Time'] }} | {{ temps['Sensor'] }} <br>
-    {{ temps['Temperature'] }} F | {{ temps['Humiditiy'] }} %    
+    {% for books in books %}
+    {{ books['words'] }} | {{ books['definition'] }} | {{ books['book'] }} <br>
     <hr>
 {% endfor %}
 {% endblock %}
